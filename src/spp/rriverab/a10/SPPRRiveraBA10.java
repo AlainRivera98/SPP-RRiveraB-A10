@@ -46,9 +46,7 @@ public class SPPRRiveraBA10 {
         int[][]S=sumaDeMatrices(A,B,m,n);
         //se invoca a método para restar matrices
         int[][]R=restaDeMatrices(A,B,m,n);
-        //se invoca a método para multiplicar matrices
-        int[][]M=multiplicacionDeMatrices(A,B,m,n);
-        
+                
         //se invoca a métodos para mostrar matrices
         System.out.println("\n\nLa suma de la matriz A: ");
         mostrarArray(A);
@@ -56,10 +54,24 @@ public class SPPRRiveraBA10 {
         mostrarArray(B);
         System.out.println("\nes: ");
         mostrarArray(S);
-        System.out.println("\ny la resta es: ");
+        System.out.println("\nla resta es: ");
         mostrarArray(R);
-        System.out.println("\ny la multiplicación es: ");
-        mostrarArray(M);
+
+        if(m==n){
+            //se invoca a método para multiplicar matrices AXB
+            int[][]M=multiplicacionDeMatrices(A,B,m,n);
+            //se invoca a método para multiplicar matrices BXA
+            int[][]N=multiplicacionDeMatrices(B,A,m,n);
+            
+            //se invoca a métodos para mostrar matrices
+            System.out.println("\nla multiplicación AXB es: ");
+            mostrarArray(M);
+            System.out.println("\nla multiplicación BXA es: ");
+            mostrarArray(N);
+        }else{
+            System.out.println("m y n no son iguales, y no se puede hacer la multiplicación de matrices");
+        }
+            
     }
     
     /*Método asignar tamaño: verifica que el entero sea positivo para evitar introducir
