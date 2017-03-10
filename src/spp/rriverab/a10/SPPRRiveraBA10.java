@@ -54,7 +54,7 @@ public class SPPRRiveraBA10 {
         mostrarArray(B);
         System.out.println("\nes: ");
         mostrarArray(S);
-        System.out.println("\nla resta es: ");
+        System.out.println("\ny la resta es: ");
         mostrarArray(R);
 
         if(m==n){
@@ -64,12 +64,12 @@ public class SPPRRiveraBA10 {
             int[][]N=multiplicacionDeMatrices(B,A,m,n);
             
             //se invoca a métodos para mostrar matrices
-            System.out.println("\nla multiplicación AXB es: ");
+            System.out.println("\ny la multiplicación AXB es: ");
             mostrarArray(M);
-            System.out.println("\nla multiplicación BXA es: ");
+            System.out.println("\ny la multiplicación BXA es: ");
             mostrarArray(N);
         }else{
-            System.out.println("m y n no son iguales, y no se puede hacer la multiplicación de matrices");
+            System.out.println("\nm y n no son iguales, y no se puede hacer la multiplicación de matrices");
         }
             
     }
