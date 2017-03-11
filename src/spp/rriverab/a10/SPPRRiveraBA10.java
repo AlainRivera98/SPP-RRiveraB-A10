@@ -190,6 +190,8 @@ public class SPPRRiveraBA10 {
         for(int i=0; i<S.length; i++){
             //Recorre las "j" columnas del array
             for (int j=0; j<S[i].length; j++){
+                /*Recorre los valores de columna en A y de fila en B para multiplicar
+                cada elemento de la fila i de la matriz A por cada elemento de la columa j de la matriz B*/
                 for (int k = 0; k < S.length; k++) {
                     S[i][j]+=A[i][k]*B[k][j];
                 }  
